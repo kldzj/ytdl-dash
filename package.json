@@ -1,0 +1,37 @@
+{
+  "name": "@kldzj/ytdl-dash",
+  "description": "Generates DASH manifests from data gathered by ytdl-core",
+  "keywords": [
+    "ytdl",
+    "dash",
+    "manifest"
+  ],
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": "https://github.com/kldzj/ytdl-dash",
+  "bugs": "https://github.com/kldzj/ytdl-dash/issues",
+  "author": {
+    "name": "Nikolai Kolodziej",
+    "email": "npm@kldzj.dev",
+    "url": "https://github.com/kldzj"
+  },
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "rimraf dist",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3",
+    "ytdl-core": "^4.11.0"
+  }
+}
